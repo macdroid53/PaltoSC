@@ -21,7 +21,7 @@ def getmixermap(mapfile):
 
 def putcuefile(newdoc, cuedict, cuenum):
 
-    cueele = ET.SubElement(newdoc, 'Cue', {'uuid':'{0}'.format(uuid.uuid4()), 'num' : '{0:003}'.format(cuenum)})
+    cueele = ET.SubElement(newdoc, 'cue', {'uuid':'{0}'.format(uuid.uuid4()), 'num' : '{0:003}'.format(cuenum)})
 
     for key in cuedict:
         print('key: {0}'.format(key))
