@@ -5,12 +5,16 @@ try:
     from lxml import ET
 except ImportError:
     import xml.etree.ElementTree as ET
-
+firstuuid = ''
 def getmixermap(mapfile):
+    global firstuuid
     mixermap = ET.parse(mapfile)
-    charcount = int(mixermap.getroot().attrib['charcount'])
+    mixermap_root = mixermap.getroot()
+    firstmap = mixermap_root.find('mixermap')
+    firstuuid = firstmap.get('uuid')
+    charcount = int(firstmap.get('charcount'))
 
-    chars = mixermap.findall('input')
+    chars = firstmap.findall('input')
     chardict = {}
     for char in chars:
         cnum = int(char.attrib['chan'])
@@ -20,8 +24,12 @@ def getmixermap(mapfile):
     return chardict
 
 def putcuefile(newdoc, cuedict, cuenum):
-
-    cueele = ET.SubElement(newdoc, 'cue', {'uuid':'{0}'.format(uuid.uuid4()), 'num' : '{0:003}'.format(cuenum)})
+    global firstuuid
+    if firstuuid:
+        cueele = ET.SubElement(newdoc, 'Cue', {'uuid': '{0}'.format(firstuuid), 'num': '{0:003}'.format(cuenum)})
+        firstuuid = None
+    else:
+        cueele = ET.SubElement(newdoc, 'Cue', {'uuid':'{0}'.format(uuid.uuid4()), 'num' : '{0:003}'.format(cuenum)})
 
     for key in cuedict:
         print('key: {0}'.format(key))
@@ -41,7 +49,7 @@ def putcuefile(newdoc, cuedict, cuenum):
 
 
 if __name__ == "__main__":
-    mixermapdict = getmixermap('/home/mac/Shows/Fiddler/MixerMapx.xml')
+    mixermapdict = getmixermap('/home/mac/Shows/Fiddler/MixerMap.xml')
     mutes = {}
     for chan in mixermapdict:
         print('Char: {0} Chan: {1}'.format(chan, mixermapdict[chan]))
