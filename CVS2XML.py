@@ -54,7 +54,11 @@ if __name__ == "__main__":
     for chan in mixermapdict:
         print('Char: {0} Chan: {1}'.format(chan, mixermapdict[chan]))
         mutes[mixermapdict[chan]] = 0
-    newdoc = ET.Element('show_control')
+    # newdoc = ET.Element('show_control')
+    templatedoc = ET.parse('/home/mac/Shows/Fiddler/Template_cues.xml')
+    newdoc = templatedoc.getroot()
+    templatecues = newdoc.findall('./Cue')
+    cue_num_offset = len(templatecues)
     with open('/home/mac/Shows/Fiddler/Fiddler_katie.csv', newline='') as f:
         cuereader = csv.DictReader(f)
         for cue_num, row in enumerate(cuereader):
@@ -109,7 +113,9 @@ if __name__ == "__main__":
                 muteelementval += '{0}:{1},'.format(muteval, mutes[muteval])
             muteelementval = muteelementval[:-1]
             newcueelements['Mutes'] = muteelementval
-            # putcuefile(newdoc, newcueelements)
+            # add dummy <levels> element
+            newcueelements['Levels'] = ''
+
             OS_clean = re.sub(r'\(.*?\)', '', row['OnStage']).replace(' ','')
             En_clean = re.sub(r'\(.*?\)', '', row['Entrances']).replace(' ','')
             Ex_clean = re.sub(r'\(.*?\)', '', row['Exits']).replace(' ', '')
@@ -117,8 +123,8 @@ if __name__ == "__main__":
             newcueelements['OnStage'] = OS_clean
             newcueelements['Entrances'] = En_clean
             newcueelements['Exits'] = Ex_clean
-            putcuefile(newdoc, newcueelements, cue_num)
+            putcuefile(newdoc, newcueelements, cue_num + cue_num_offset)
 
     newdoctree = ET.ElementTree(newdoc)
-    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesx.xml')
+    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesxt.xml')
     pass
