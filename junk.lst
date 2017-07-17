@@ -1,0 +1,11 @@
+total 40
+drwxrwxr-x  4 mac mac 4096 Jul 17 19:09 .
+drwxrwxr-x 36 mac mac 4096 Jun 25 09:29 ..
+-rw-rw-r--  1 mac mac  963 Jul 11 16:46 CharacterScan.py
+-rw-rw-r--  1 mac mac  135 Jun 19 14:52 CharCastMatch.py
+-rw-rw-r--  1 mac mac  849 Jul 16 11:20 CharListToMixerMap.py
+-rw-rw-r--  1 mac mac 5411 Jul 17 18:49 CVS2XML.py
+drwxrwxr-x  8 mac mac 4096 Jul 17 19:09 .git
+drwxrwxr-x  2 mac mac 4096 Jul 17 18:51 .idea
+-rw-rw-r--  1 mac mac    0 Jul 17 19:09 junk.lst
+-rw-rw-r--  1 mac mac   53 Jun 29 13:48 test1.py
