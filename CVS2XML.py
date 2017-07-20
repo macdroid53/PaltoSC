@@ -1,10 +1,32 @@
+import os
+from os import path
+import sys
 import uuid
 import csv
 import re
+import inspect
+import logging
 try:
     from lxml import ET
 except ImportError:
     import xml.etree.ElementTree as ET
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+print(currentdir)
+syblingdir =  os.path.dirname(currentdir) + '/ShowControl/ShowControl/utils'
+print(syblingdir)
+parentdir = os.path.dirname(currentdir)
+print(parentdir)
+sys.path.insert(0,syblingdir)
+sys.path.insert(0,'/home/mac/SharedData/PycharmProjs/ShowControl/ShowMixer')
+print(sys.path)
+
+from Show import Show
+from ShowConf import ShowConf
+from ShowControlConfig import configuration, CFG_DIR, CFG_PATH
+from MixerConf import MixerConf
+
+
 firstuuid = ''
 def getmixermap(mapfile):
     global firstuuid
@@ -49,6 +71,30 @@ def putcuefile(newdoc, cuedict, cuenum):
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO,
+                        filename='ShowMixer.log', filemode='w',
+                        format='%(name)s %(levelname)s %(message)s')
+    logging.info('Begin')
+    cfg = configuration()
+    mixers = {}
+    show_conf = ShowConf(cfg.cfgdict)
+    for mxrid in show_conf.equipment['mixers']:
+        # print(mxrid)
+        if show_conf.equipment['mixers'][mxrid]['IP_address']:
+            mixeraddress = show_conf.equipment['mixers'][mxrid]['IP_address'] + ',' + \
+                           show_conf.equipment['mixers'][mxrid]['port']
+        else:
+            mixeraddress = show_conf.equipment['mixers'][mxrid]['MIDI_address']
+        mixers[mxrid] = MixerConf(path.abspath(path.join(CFG_DIR, cfg.cfgdict['configuration']['mixers']['folder'],
+                                                              cfg.cfgdict['configuration']['mixers']['file'])),
+                                       show_conf.equipment['mixers'][mxrid]['mfr'],
+                                       show_conf.equipment['mixers'][mxrid]['model'],
+                                       mixeraddress)
+    b = list(a['name'].lower() for a in mixers[0].mxrconsole)
+    level_list = []
+    for count, chan in enumerate(b):
+        level_list.append('M{0}{1}:0'.format(0,chan))
+    level_val = ','.join(level_list)
     mixermapdict = getmixermap('/home/mac/Shows/Fiddler/MixerMap.xml')
     mutes = {}
     for chan in mixermapdict:
@@ -114,7 +160,7 @@ if __name__ == "__main__":
             muteelementval = muteelementval[:-1]
             newcueelements['Mutes'] = muteelementval
             # add dummy <levels> element
-            newcueelements['Levels'] = ''
+            newcueelements['Levels'] = level_val
 
             OS_clean = re.sub(r'\(.*?\)', '', row['OnStage']).replace(' ','')
             En_clean = re.sub(r'\(.*?\)', '', row['Entrances']).replace(' ','')
