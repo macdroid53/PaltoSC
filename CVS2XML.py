@@ -47,7 +47,7 @@ def getmixermap(mapfile):
 
 def putcuefile(newdoc, cuedict, cuenum):
     global firstuuid
-    if firstuuid:
+    if firstuuid and cuenum == 0:
         cueele = ET.SubElement(newdoc, 'Cue', {'uuid': '{0}'.format(firstuuid), 'num': '{0:003}'.format(cuenum)})
         firstuuid = None
     else:
