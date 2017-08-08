@@ -6,6 +6,7 @@ import csv
 import re
 import inspect
 import logging
+import string
 try:
     from lxml import ET
 except ImportError:
@@ -25,6 +26,28 @@ from Show import Show
 from ShowConf import ShowConf
 from ShowControlConfig import configuration, CFG_DIR, CFG_PATH
 from MixerConf import MixerConf
+
+
+def sort_controls(self, control_list=[]):
+    chlist = []
+    auxlist = []
+    buslist = []
+    mainlist = []
+    for control in control_list:
+        if 'bus' in control:
+            buslist.append(control)
+        elif 'aux' in control:
+            auxlist.append(control)
+        elif 'main' in control:
+            mainlist.append(control)
+        elif 'ch' in control:
+            chlist.append(control)
+    buslist = sorted(buslist)
+    auxlist = sorted(auxlist)
+    mainlist = sorted(mainlist)
+    chlist = sorted(chlist)
+    sorted_controls = chlist + auxlist + buslist + mainlist
+    return sorted_controls
 
 
 firstuuid = ''
@@ -69,6 +92,28 @@ def putcuefile(newdoc, cuedict, cuenum):
                 pass
     return newdoc
 
+def sort_controls(control_str=''):
+    control_list = control_str.split(',')
+    chlist = []
+    auxlist = []
+    buslist = []
+    mainlist = []
+    for control in control_list:
+        if 'bus' in control:
+            buslist.append(control)
+        elif 'aux' in control:
+            auxlist.append(control)
+        elif 'main' in control:
+            mainlist.append(control)
+        elif 'ch' in control:
+            chlist.append(control)
+    buslist = sorted(buslist)
+    auxlist = sorted(auxlist)
+    mainlist = sorted(mainlist)
+    chlist = sorted(chlist)
+    sorted_controls = chlist + auxlist + buslist + mainlist
+    return sorted_controls
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
@@ -90,16 +135,20 @@ if __name__ == "__main__":
                                        show_conf.equipment['mixers'][mxrid]['mfr'],
                                        show_conf.equipment['mixers'][mxrid]['model'],
                                        mixeraddress)
-    b = list(a['name'].lower() for a in mixers[0].mxrconsole)
+    chan_name_list = list(a['name'].lower() for a in mixers[0].mxrconsole)
     level_list = []
-    for count, chan in enumerate(b):
+    for count, chan in enumerate(chan_name_list):
         level_list.append('M{0}{1}:0'.format(0,chan))
     level_val = ','.join(level_list)
     mixermapdict = getmixermap('/home/mac/Shows/Fiddler/MixerMap.xml')
     mutes = {}
-    for chan in mixermapdict:
-        print('Char: {0} Chan: {1}'.format(chan, mixermapdict[chan]))
-        mutes[mixermapdict[chan]] = 0
+    for chan in chan_name_list:
+        print('Chan Name: {}'.format(chan))
+        mxrchnnam = 'M{0}{1}'.format(0,chan)
+        mutes[mxrchnnam] = 0
+    # for chan in mixermapdict:
+    #     print('Char: {0} Chan: {1}'.format(chan, mixermapdict[chan]))
+    #     mutes[mixermapdict[chan]] = 0
     # newdoc = ET.Element('show_control')
     templatedoc = ET.parse('/home/mac/Shows/Fiddler/Template_cues.xml')
     newdoc = templatedoc.getroot()
@@ -158,7 +207,8 @@ if __name__ == "__main__":
             for muteval in mutes:
                 muteelementval += '{0}:{1},'.format(muteval, mutes[muteval])
             muteelementval = muteelementval[:-1]
-            newcueelements['Mutes'] = muteelementval
+            mutes_sorted = sort_controls( muteelementval )
+            newcueelements['Mutes'] = ','.join(mutes_sorted)
             # add dummy <levels> element
             newcueelements['Levels'] = level_val
 
@@ -172,5 +222,6 @@ if __name__ == "__main__":
             putcuefile(newdoc, newcueelements, cue_num + cue_num_offset)
 
     newdoctree = ET.ElementTree(newdoc)
-    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesxt.xml')
+    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesx.xml')
+
     pass

@@ -8,6 +8,29 @@ import inspect
 import logging
 import string
 
+
+def sort_controls(self, control_list=[]):
+    chlist = []
+    auxlist = []
+    buslist = []
+    mainlist = []
+    for control in control_list:
+        if 'bus' in control:
+            buslist.append(control)
+        elif 'aux' in control:
+            auxlist.append(control)
+        elif 'main' in control:
+            mainlist.append(control)
+        elif 'ch' in control:
+            chlist.append(control)
+    buslist = sorted(buslist)
+    auxlist = sorted(auxlist)
+    mainlist = sorted(mainlist)
+    chlist = sorted(chlist)
+    sorted_controls = chlist + auxlist + buslist + mainlist
+    return sorted_controls
+
+
 class indent:
     def __init__(self, indent_char='  '):
         self.level = 0
@@ -19,26 +42,6 @@ class indent:
     def getindent(self):
         return self.level * self.indent_char
 
-    def sort_controls(self, control_list=[]):
-        chlist = []
-        auxlist = []
-        buslist = []
-        mainlist = []
-        for control in control_list:
-            if 'bus' in control:
-                buslist.append(control)
-            elif 'aux' in control:
-                auxlist.append(control)
-            elif 'main' in control:
-                mainlist.append(control)
-            elif 'ch' in control:
-                chlist.append(control)
-        buslist = sorted(buslist)
-        auxlist = sorted(auxlist)
-        mainlist = sorted(mainlist)
-        chlist = sorted(chlist)
-        sorted_controls = chlist + auxlist + buslist + mainlist
-        return sorted_controls
 
 
 bracketsets_re = re.compile('<.*?>')
@@ -132,6 +135,6 @@ for i in range((len(raw_xml))):
 
     pass
 
-f = open('/home/mac/Shows/Fiddler/Fiddler_cuesx_pretty.xml', 'w')
+f = open('/home/mac/Shows/Fiddler/Fiddler_cues_pretty.xml', 'w')
 f.write(new_xml)
 f.close()
