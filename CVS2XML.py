@@ -154,7 +154,7 @@ if __name__ == "__main__":
     newdoc = templatedoc.getroot()
     templatecues = newdoc.findall('./Cue')
     cue_num_offset = len(templatecues)
-    with open('/home/mac/Shows/Fiddler/Fiddler_katie.csv', newline='') as f:
+    with open('/home/mac/Shows/Fiddler/Fiddler_katie_txt.csv', newline='') as f:
         cuereader = csv.DictReader(f)
         for cue_num, row in enumerate(cuereader):
             print('{0},{1},{2},{3}'.format(row['A'],row['S'],row['Page'],row['Id']))
@@ -222,6 +222,6 @@ if __name__ == "__main__":
             putcuefile(newdoc, newcueelements, cue_num + cue_num_offset)
 
     newdoctree = ET.ElementTree(newdoc)
-    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesx.xml')
+    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesx_txt.xml')
 
     pass
