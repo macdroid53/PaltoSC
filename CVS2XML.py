@@ -117,7 +117,7 @@ def sort_controls(control_str=''):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
-                        filename='ShowMixer.log', filemode='w',
+                        filename='CVCS2XML.log', filemode='w',
                         format='%(name)s %(levelname)s %(message)s')
     logging.info('Begin')
     cfg = configuration()
@@ -140,7 +140,7 @@ if __name__ == "__main__":
     for count, chan in enumerate(chan_name_list):
         level_list.append('M{0}{1}:0'.format(0,chan))
     level_val = ','.join(level_list)
-    mixermapdict = getmixermap('/home/mac/Shows/Fiddler/MixerMap.xml')
+    mixermapdict = getmixermap('/home/mac/Shows/Fiddler/MixerMap_full.xml')
     mutes = {}
     for chan in chan_name_list:
         print('Chan Name: {}'.format(chan))
@@ -154,7 +154,7 @@ if __name__ == "__main__":
     newdoc = templatedoc.getroot()
     templatecues = newdoc.findall('./Cue')
     cue_num_offset = len(templatecues)
-    with open('/home/mac/Shows/Fiddler/Fiddler_katie_txt.csv', newline='') as f:
+    with open('/home/mac/Shows/Fiddler/Fiddler_katie_txt-1.csv', newline='') as f:
         cuereader = csv.DictReader(f)
         for cue_num, row in enumerate(cuereader):
             print('{0},{1},{2},{3}'.format(row['A'],row['S'],row['Page'],row['Id']))
@@ -180,8 +180,9 @@ if __name__ == "__main__":
                 except ValueError:
                     ent_char = ent
                 char = ent_char.strip()
-                if char not in mixermapdict:
+                if char not in mixermapdict and char != '':
                     print('{0} not found!'.format(ent))
+                    logging.info('In {} Entrances char: {} not found!'.format(row['Id'],char))
                 if char != '' and char in mixermapdict:
                     mixerchan = mixermapdict[char.replace(' ','')]
                     mutes[mixerchan] = 1
@@ -193,8 +194,9 @@ if __name__ == "__main__":
                 except ValueError:
                     xit_char = ent
                 char = xit_char.strip()
-                if char not in mixermapdict:
+                if char not in mixermapdict and char != '':
                     print('{0} not found!'.format(xit))
+                    logging.info('In {} Exits char: {} not found!'.format(row['Id'],char))
                 if char != '' and char in mixermapdict:
                     mixerchan = mixermapdict[char.replace(' ','')]
                     mutes[mixerchan] = 0
@@ -222,6 +224,6 @@ if __name__ == "__main__":
             putcuefile(newdoc, newcueelements, cue_num + cue_num_offset)
 
     newdoctree = ET.ElementTree(newdoc)
-    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesx_txt.xml')
+    newdoctree.write('/home/mac/Shows/Fiddler/Fiddler_cuesx_txt-1.xml')
 
     pass
