@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54ed0549-308a-45f8-b8e8-e5a6beb9ec13" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CVS2XML.py" afterPath="$PROJECT_DIR$/CVS2XML.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/test1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +16,8 @@
       <file leaf-file-name="CharacterScan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CharacterScan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -28,30 +26,8 @@
       <file leaf-file-name="PrettyPrintXML.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PrettyPrintXML.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="128" column="26" lean-forward="false" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharListToMixerMap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CharListToMixerMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="16" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CVS2XML.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CVS2XML.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="136" column="33" lean-forward="false" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+            <state relative-caret-position="1078">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -59,12 +35,58 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CharListToMixerMap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CharListToMixerMap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CVS2XML.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CVS2XML.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="150" column="39" lean-forward="true" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MicPlotToMixerMapCues.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MicPlotToMixerMapCues.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Add_Map_to_Cues.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Add_Map_to_Cues.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="918">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +106,16 @@
       <find>newcue[</find>
       <find>Leve</find>
       <find>MixerConf</find>
-      <find>level_val</find>
       <find>levels</find>
+      <find>level_val</find>
+      <find>Id:</find>
+      <find>Id: 98</find>
+      <find>format</find>
+      <find>loggin</find>
+      <find>Nach</find>
+      <find>072</find>
+      <find>056</find>
+      <find>get_cue_element_by_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,12 +130,14 @@
         <option value="$PROJECT_DIR$/make_sound_sequences_xml.py" />
         <option value="$PROJECT_DIR$/make_sounds_xml.py" />
         <option value="$PROJECT_DIR$/test1.py" />
-        <option value="$PROJECT_DIR$/CVS2XML.py" />
         <option value="$PROJECT_DIR$/PrettyPrintXML.py" />
+        <option value="$PROJECT_DIR$/MicPlotToMixerMapCues.py" />
+        <option value="$PROJECT_DIR$/CVS2XML.py" />
+        <option value="$PROJECT_DIR$/Add_Map_to_Cues.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="2037" />
     <option name="y" value="113" />
     <option name="width" value="1680" />
@@ -126,6 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,8 +171,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,7 +189,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CVS2XML">
+  <component name="RunManager" selected="Python.Add_Map_to_Cues">
+    <configuration name="Add_Map_to_Cues" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PalladiumToShowControl" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Add_Map_to_Cues.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="CVS2XML" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -171,6 +220,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PalladiumToShowControl" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CVS2XML.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="MicPlotToMixerMapCues" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PalladiumToShowControl" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MicPlotToMixerMapCues.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,40 +322,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="make_sound_sequences_xml" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PalladiumToShowControl" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_sound_sequences_xml.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="make_sounds_xml" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PalladiumToShowControl" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_sounds_xml.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,18 +341,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.CVS2XML" />
-      <item index="1" class="java.lang.String" itemvalue="Python.make_sounds_xml" />
-      <item index="2" class="java.lang.String" itemvalue="Python.make_sound_sequences_xml" />
-      <item index="3" class="java.lang.String" itemvalue="Python.PrettyPrintXML" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.PrettyPrintXML" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.MicPlotToMixerMapCues" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Add_Map_to_Cues" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CVS2XML" />
-        <item index="1" class="java.lang.String" itemvalue="Python.PrettyPrintXML" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.make_sounds_xml" />
-        <item index="4" class="java.lang.String" itemvalue="Python.make_sound_sequences_xml" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Add_Map_to_Cues" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MicPlotToMixerMapCues" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CVS2XML" />
+        <item index="3" class="java.lang.String" itemvalue="Python.PrettyPrintXML" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +370,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2037" y="113" width="1680" height="930" extended-state="0" />
+    <frame x="2037" y="113" width="1680" height="930" extended-state="1" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24970202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -354,6 +386,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -378,7 +411,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CVS2XML.py</url>
-          <line>85</line>
+          <line>107</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -392,50 +425,43 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CVS2XML.py</url>
-          <line>203</line>
+          <line>227</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MicPlotToMixerMapCues.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CVS2XML.py</url>
-          <line>142</line>
-          <option name="timeStamp" value="87" />
+          <line>183</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CVS2XML.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Add_Map_to_Cues.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="88" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="new_line" language="Python" />
-        <watch expression="new_xml" language="Python" />
-        <watch expression="brackets" language="Python" />
-        <watch expression="endbracket" language="Python" />
-        <watch expression="onelinetag" language="Python" />
-        <watch expression="commenttag" language="Python" />
+        <watch expression="mixermapdict" language="Python" />
+        <watch expression="char" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CVS2XML.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CharacterScan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CharListToMixerMap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -450,7 +476,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -486,7 +514,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,7 +552,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -558,7 +590,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -594,7 +628,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,7 +656,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -646,7 +684,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -672,7 +712,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -698,7 +740,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -724,7 +768,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -740,7 +786,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -756,7 +804,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -779,15 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CharacterScan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,16 +858,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="918">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <marker date="1502220594126" expanded="true" signature="132:402" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MicPlotToMixerMapCues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CharacterScan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CVS2XML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="150" column="39" lean-forward="true" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CharListToMixerMap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -835,19 +904,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PrettyPrintXML.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="128" column="26" lean-forward="false" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CVS2XML.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="136" column="33" lean-forward="false" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+        <state relative-caret-position="1078">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Add_Map_to_Cues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
